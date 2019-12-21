@@ -50,7 +50,6 @@ class LoginRepositoryTest : BaseUTTest(){
         val dataReceived = mRepo.getLoginData(mParam)
 
         assertNotNull(dataReceived)
-        assert(dataReceived is AllPeople)
         assertEquals(dataReceived.count, mCount)
         assertEquals(dataReceived.next, mNextValue)
     }
