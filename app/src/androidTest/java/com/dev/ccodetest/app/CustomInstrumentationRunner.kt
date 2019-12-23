@@ -9,7 +9,11 @@ import androidx.test.runner.AndroidJUnitRunner
  * Helps to configure environment with new App instance.
  */
 class CustomInstrumentationRunner : AndroidJUnitRunner() {
-    override fun newApplication(cl: ClassLoader, className: String, context: Context): Application {
-        return super.newApplication(cl, TestMainApp::class.java.name, context)
+    override fun newApplication(cl: ClassLoader,
+                                className: String,
+                                context: Context): Application {
+        return super.newApplication(cl,
+            TestMainApp::class.java.name,
+            context)
     }
 }

@@ -24,7 +24,7 @@ import org.koin.test.inject
 import java.net.HttpURLConnection
 
 @RunWith(AndroidJUnit4::class)
-class LoginActivityFragmentTest : BaseUITest(){
+class LoginActivityTest : BaseUITest(){
 
     @Rule
     @JvmField
