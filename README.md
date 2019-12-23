@@ -17,6 +17,9 @@ Source code of [Medium Article](https://medium.com/@sreeharikv112/android-unit-t
 - Creating unit test case with dependencies
 - Override the default dependencies 
 - Mock required dependency and create required test cases 
+<br>
+
+For detailed explanation of points mentioned above, checkout [Article published in Medium](https://medium.com/@sreeharikv112/android-unit-testing-clean-code-architecture-with-mvvm-73eb2992cab7)
 
 <br>
 
