@@ -56,17 +56,17 @@ class LoginActivityTest : BaseUITest(){
 
         mockNetworkResponseWithFileContent("success_resp_list.json", HttpURLConnection.HTTP_OK)
 
+        //Wait for MockWebServer to get back with response
         SystemClock.sleep(1000)
 
+        //Check if item at 0th position is having 0th element in json
         onView(withId(R.id.landingListRecyclerView))
             .check(
                 matches(
                     recyclerItemAtPosition(
                         0,
                         ViewMatchers.hasDescendant(withText(mNameTestOne))
-                    )
-                )
-            )
+                    )))
 
         onView(withId(R.id.landingListRecyclerView))
             .check(
@@ -74,13 +74,13 @@ class LoginActivityTest : BaseUITest(){
                     recyclerItemAtPosition(
                         0,
                         ViewMatchers.hasDescendant(withText(mDOBTestOne))
-                    )
-                )
-            )
+                    )))
 
+        //Scroll to last index in json
         onView(withId(R.id.landingListRecyclerView)).perform(
             RecyclerViewActions.scrollToPosition<LoginRecyclerViewAdapter.LoginFragViewHolder>(9))
 
+        //Check if item at 9th position is having 9th element in json
         onView(withId(R.id.landingListRecyclerView))
             .check(matches(recyclerItemAtPosition(9, ViewMatchers.hasDescendant(withText(mNameTestTwo)))))
 
