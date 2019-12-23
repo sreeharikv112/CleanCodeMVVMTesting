@@ -56,7 +56,6 @@ class LoginActivityTest : BaseUITest(){
 
         mockNetworkResponseWithFileContent("success_resp_list.json", HttpURLConnection.HTTP_OK)
 
-        //Rework required than sleep method.
         SystemClock.sleep(1000)
 
         onView(withId(R.id.landingListRecyclerView))
