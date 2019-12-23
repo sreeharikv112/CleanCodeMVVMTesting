@@ -1,6 +1,6 @@
-# Clean Code Architecture +  MVVM +  Testing
+# Clean Code Architecture +  MVVM +  UI / UT Testing
 
-Source code of [Medium Article](https://medium.com/@sreeharikv112/android-unit-testing-clean-code-architecture-with-mvvm-73eb2992cab7) which describes Android Unit Testing Clean Code Architecture with MVVM.
+Source code of [Medium Article](https://medium.com/@sreeharikv112/android-unit-testing-clean-code-architecture-with-mvvm-73eb2992cab7) which describes Android Unit and Instrumentation Testing in Clean Code Architecture with MVVM.
 
 
 ## Architecture followed
@@ -17,6 +17,8 @@ Source code of [Medium Article](https://medium.com/@sreeharikv112/android-unit-t
 - Creating unit test case with dependencies
 - Override the default dependencies 
 - Mock required dependency and create required test cases 
+- Execute both Unit and Instrumentation test cases
+
 <br>
 
 For detailed explanation of points mentioned above, checkout [Article published in Medium](https://medium.com/@sreeharikv112/android-unit-testing-clean-code-architecture-with-mvvm-73eb2992cab7)
