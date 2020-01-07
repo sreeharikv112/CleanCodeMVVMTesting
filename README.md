@@ -11,6 +11,20 @@ Source code of Medium Articles which describes Android Unit and Instrumentation 
 
 <br>
 
+## Main Libraries Used
+
+- Coroutines 🚀 https://developer.android.com/kotlin/coroutines
+
+- Retrofit 📲  https://square.github.io/retrofit/
+
+- MockWebServer 🎭 https://github.com/square/okhttp/tree/master/mockwebserver
+
+- Koin (💉Dependency Injection) https://insert-koin.io/
+
+- Kotlin 🥇 (https://developer.android.com/kotlin)
+
+
+
 ## The article explains 
 
 
@@ -33,17 +47,6 @@ For detailed explanation of points mentioned above, checkout [Article published 
 </p>
 <br>
 
-## Main libraries included
-
-- Coroutines 🚀 https://developer.android.com/kotlin/coroutines
-
-- Retrofit 📲  https://square.github.io/retrofit/
-
-- MockWebServer 🎭 https://github.com/square/okhttp/tree/master/mockwebserver
-
-- Koin (💉Dipendency Injection) https://insert-koin.io/
-
-- Kotlin 🥇 (https://developer.android.com/kotlin)
 
 ## Uses Swapi API for explaining required data flow 
 
