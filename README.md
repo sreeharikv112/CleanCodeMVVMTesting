@@ -35,15 +35,15 @@ For detailed explanation of points mentioned above, checkout [Article published 
 
 ## Main libraries included
 
-- Coroutines https://developer.android.com/kotlin/coroutines
+- Coroutines 🚀 https://developer.android.com/kotlin/coroutines
 
-- Retrofit https://square.github.io/retrofit/
+- Retrofit 📲  https://square.github.io/retrofit/
 
-- MockWebServer https://github.com/square/okhttp/tree/master/mockwebserver
+- MockWebServer 🎭 https://github.com/square/okhttp/tree/master/mockwebserver
 
 - Koin (💉Dipendency Injection) https://insert-koin.io/
 
-- Kotlin (https://developer.android.com/kotlin)
+- Kotlin 🥇 (https://developer.android.com/kotlin)
 
 ## Uses Swapi API for explaining required data flow 
 
