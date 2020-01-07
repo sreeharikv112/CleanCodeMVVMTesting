@@ -1,7 +1,9 @@
 # Clean Code Architecture +  MVVM +  UI / UT Testing
 
-Source code of [Medium Article](https://medium.com/@sreeharikv112/android-unit-testing-clean-code-architecture-with-mvvm-73eb2992cab7) which describes Android Unit and Instrumentation Testing in Clean Code Architecture with MVVM.
+Source code of Medium Articles which describes Android Unit and Instrumentation Testing in Clean Code Architecture with MVVM.
 
+- [Medium Article Part One - Deep dive in Unit Testing](https://medium.com/@sreeharikv112/android-unit-testing-clean-code-architecture-with-mvvm-73eb2992cab7)
+- [Medium Article Part Two - Exciting Instrumentation Testing](https://medium.com/@sreeharikv112/android-instrumentation-testing-with-clean-code-architecture-and-mvvm-5df4615f0e4a)
 
 ## Architecture followed
 
