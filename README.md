@@ -1,13 +1,29 @@
 # Clean Code Architecture +  MVVM +  UI / UT Testing
 
-Source code of [Medium Article](https://medium.com/@sreeharikv112/android-unit-testing-clean-code-architecture-with-mvvm-73eb2992cab7) which describes Android Unit and Instrumentation Testing in Clean Code Architecture with MVVM.
+Source code of Medium Articles which describes Android Unit and Instrumentation Testing in Clean Code Architecture with MVVM.
 
+- [Medium Article Part One - Deep dive in Unit Testing](https://medium.com/@sreeharikv112/android-unit-testing-clean-code-architecture-with-mvvm-73eb2992cab7)
+- [Medium Article Part Two - Exciting Instrumentation Testing](https://medium.com/@sreeharikv112/android-instrumentation-testing-with-clean-code-architecture-and-mvvm-5df4615f0e4a)
 
 ## Architecture followed
 
 ![ArchDiagram1](https://user-images.githubusercontent.com/39777674/71248284-78d00800-2340-11ea-9077-080e29a8c918.png)
 
 <br>
+
+## Main Libraries Used
+
+- Coroutines 🚀 https://developer.android.com/kotlin/coroutines
+
+- Retrofit 📲  https://square.github.io/retrofit/
+
+- MockWebServer 🎭 https://github.com/square/okhttp/tree/master/mockwebserver
+
+- Koin (💉Dependency Injection) https://insert-koin.io/
+
+- Kotlin 🥇 (https://developer.android.com/kotlin)
+
+
 
 ## The article explains 
 
@@ -31,17 +47,6 @@ For detailed explanation of points mentioned above, checkout [Article published 
 </p>
 <br>
 
-## Main libraries included
-
-- Coroutines https://developer.android.com/kotlin/coroutines
-
-- Retrofit https://square.github.io/retrofit/
-
-- MockWebServer https://github.com/square/okhttp/tree/master/mockwebserver
-
-- Koin (💉Dipendency Injection) https://insert-koin.io/
-
-- Kotlin (https://developer.android.com/kotlin)
 
 ## Uses Swapi API for explaining required data flow 
 
