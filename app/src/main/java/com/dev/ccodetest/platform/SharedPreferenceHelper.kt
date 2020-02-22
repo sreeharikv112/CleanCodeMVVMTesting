@@ -33,7 +33,7 @@ class SharedPreferenceHelper(var context: Context) {
 
     fun getStringData(key : String): String {
         return if(mSharedPref.contains(key))
-            mSharedPref.getString(key,"")
+            mSharedPref.getString(key,"")!!
         else
             ""
     }
