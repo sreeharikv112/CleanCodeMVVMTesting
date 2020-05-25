@@ -56,7 +56,8 @@ class LoginActivityViewModelTest: BaseUTTest(){
         mLoginActivityViewModel.requestLoginActivityData(mParam)
 
         assert(mLoginActivityViewModel.mAllPeopleResponse.value != null)
-        assert(mLoginActivityViewModel.mAllPeopleResponse.value!!.responseRESPONSESTATUS
+        assert(
+            mLoginActivityViewModel.mAllPeopleResponse.value!!.responseStatus
                 == LiveDataWrapper.RESPONSESTATUS.SUCCESS)
         val testResult = mLoginActivityViewModel.mAllPeopleResponse.value as LiveDataWrapper<AllPeople>
         assertEquals(testResult.response!!.next,mNextValue)

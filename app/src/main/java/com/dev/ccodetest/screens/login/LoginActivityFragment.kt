@@ -8,7 +8,6 @@ import android.view.View
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.dev.ccodetest.R
 import com.dev.ccodetest.models.login.AllPeople
 import com.dev.ccodetest.models.login.AllPeopleResult
@@ -62,7 +61,7 @@ class LoginActivityFragment : BaseFragment() {
 
     //---------------Observers---------------//
     private val mDataObserver = Observer<LiveDataWrapper<AllPeople>> { result ->
-        when (result?.responseRESPONSESTATUS) {
+        when (result?.responseStatus) {
             LiveDataWrapper.RESPONSESTATUS.LOADING -> {
                 // Loading data
             }

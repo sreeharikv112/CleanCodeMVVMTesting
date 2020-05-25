@@ -20,7 +20,7 @@ android {
         versionName "1.0"
         testInstrumentationRunner "com.dev.ccodetest.app.CustomInstrumentationRunner"
         multiDexEnabled true
-        buildConfigField "String", "BASE_URL", "\"https://swapi.co/api/\""
+        buildConfigField "String", "BASE_URL", "\"https://swapi.dev/api/\""
     }
     buildTypes {
         release {
