@@ -5,6 +5,8 @@ import com.dev.ccodetest.base.BaseUTTest
 import com.dev.ccodetest.di.configureTestAppComponent
 import com.dev.ccodetest.models.login.AllPeople
 import com.dev.ccodetest.platform.LiveDataWrapper
+import com.dev.ccodetest.screens.login.uc.LoginUseCase
+import com.dev.ccodetest.screens.login.vm.LoginActivityViewModel
 import com.google.gson.Gson
 import io.mockk.MockKAnnotations
 import io.mockk.coEvery
@@ -46,7 +48,12 @@ class LoginActivityViewModelTest: BaseUTTest(){
     @Test
     fun test_login_view_model_data_populates_expected_value(){
 
-        mLoginActivityViewModel = LoginActivityViewModel(mDispatcher,mDispatcher,mLoginUseCase)
+        mLoginActivityViewModel =
+            LoginActivityViewModel(
+                mDispatcher,
+                mDispatcher,
+                mLoginUseCase
+            )
         val sampleResponse = getJson("success_resp_list.json")
         var jsonObj = Gson().fromJson(sampleResponse, AllPeople::class.java)
         //Make sure login use case returns expected response when called
@@ -56,7 +63,8 @@ class LoginActivityViewModelTest: BaseUTTest(){
         mLoginActivityViewModel.requestLoginActivityData(mParam)
 
         assert(mLoginActivityViewModel.mAllPeopleResponse.value != null)
-        assert(mLoginActivityViewModel.mAllPeopleResponse.value!!.responseRESPONSESTATUS
+        assert(
+            mLoginActivityViewModel.mAllPeopleResponse.value!!.responseStatus
                 == LiveDataWrapper.RESPONSESTATUS.SUCCESS)
         val testResult = mLoginActivityViewModel.mAllPeopleResponse.value as LiveDataWrapper<AllPeople>
         assertEquals(testResult.response!!.next,mNextValue)

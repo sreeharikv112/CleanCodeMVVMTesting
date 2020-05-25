@@ -3,7 +3,11 @@ package com.dev.ccodetest.platform
 /**
  * Custom result object.
  */
-class LiveDataWrapper<T>(val responseRESPONSESTATUS: RESPONSESTATUS, val response: T? = null, val error: Throwable? = null) {
+class LiveDataWrapper<T>(
+    val responseStatus: RESPONSESTATUS,
+    val response: T? = null,
+    val error: Throwable? = null
+) {
 
     enum class RESPONSESTATUS {
         SUCCESS, LOADING, ERROR

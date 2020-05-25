@@ -1,9 +1,10 @@
-package com.dev.ccodetest.screens.login
+package com.dev.ccodetest.screens.login.vm
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.dev.ccodetest.models.login.AllPeople
 import com.dev.ccodetest.platform.LiveDataWrapper
+import com.dev.ccodetest.screens.login.uc.LoginUseCase
 import kotlinx.coroutines.*
 import org.koin.core.KoinComponent
 

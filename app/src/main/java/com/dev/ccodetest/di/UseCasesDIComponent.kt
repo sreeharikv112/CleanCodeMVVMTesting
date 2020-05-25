@@ -1,6 +1,6 @@
 package com.dev.ccodetest.di
 
-import com.dev.ccodetest.screens.login.LoginUseCase
+import com.dev.ccodetest.screens.login.uc.LoginUseCase
 import org.koin.dsl.module
 
 /**

@@ -12,9 +12,9 @@ import android.widget.ImageView
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.Fragment
+import com.bumptech.glide.Glide
 import com.dev.ccodetest.contracts.AlertCallBack
 import com.dev.ccodetest.contracts.AppLogger
-import com.bumptech.glide.Glide
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 
 /**
@@ -37,7 +37,7 @@ abstract class BaseFragment: Fragment(), AppLogger, AlertCallBack {
                   positiveListener: DialogInterface.OnClickListener,
                   negativeListener: DialogInterface.OnClickListener
     ) {
-        MaterialAlertDialogBuilder(activity)
+        MaterialAlertDialogBuilder(context!!)
             .setMessage(message)
             .setPositiveButton(positiveBtnText, positiveListener)
             .setNegativeButton(negativeBtnText, negativeListener)

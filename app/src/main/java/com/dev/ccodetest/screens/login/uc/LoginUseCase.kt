@@ -1,4 +1,4 @@
-package com.dev.ccodetest.screens.login
+package com.dev.ccodetest.screens.login.uc
 
 import com.dev.ccodetest.models.login.AllPeople
 import com.dev.ccodetest.repository.LoginRepository

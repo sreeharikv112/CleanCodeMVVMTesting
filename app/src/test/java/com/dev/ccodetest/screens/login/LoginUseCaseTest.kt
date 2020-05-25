@@ -3,9 +3,9 @@ package com.dev.ccodetest.screens.login
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import com.dev.ccodetest.base.BaseUTTest
 import com.dev.ccodetest.di.configureTestAppComponent
-import com.dev.ccodetest.models.login.AllPeople
 import com.dev.ccodetest.network.login.LoginAPIService
 import com.dev.ccodetest.repository.LoginRepository
+import com.dev.ccodetest.screens.login.uc.LoginUseCase
 import kotlinx.coroutines.runBlocking
 import okhttp3.mockwebserver.MockWebServer
 import org.junit.Assert.assertEquals

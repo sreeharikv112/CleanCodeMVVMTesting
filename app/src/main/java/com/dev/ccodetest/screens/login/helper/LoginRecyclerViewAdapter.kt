@@ -1,4 +1,4 @@
-package com.dev.ccodetest.screens.login
+package com.dev.ccodetest.screens.login.helper
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -17,7 +17,9 @@ class LoginRecyclerViewAdapter(val context: Context, list: ArrayList<AllPeopleRe
     var mItemList = list
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): LoginFragViewHolder {
-        return LoginFragViewHolder(LayoutInflater.from(context).inflate(R.layout.landing_list_view_item,parent,false))
+        return LoginFragViewHolder(
+            LayoutInflater.from(context).inflate(R.layout.landing_list_view_item, parent, false)
+        )
     }
 
     fun updateListItems(updatedList: ArrayList<AllPeopleResult>){

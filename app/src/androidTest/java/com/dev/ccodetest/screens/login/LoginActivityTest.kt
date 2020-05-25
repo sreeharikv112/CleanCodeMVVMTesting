@@ -14,6 +14,8 @@ import com.dev.ccodetest.R
 import com.dev.ccodetest.base.BaseUITest
 import com.dev.ccodetest.di.generateTestAppComponent
 import com.dev.ccodetest.helpers.recyclerItemAtPosition
+import com.dev.ccodetest.screens.login.helper.LoginRecyclerViewAdapter
+import com.dev.ccodetest.screens.login.uc.LoginUseCase
 import okhttp3.mockwebserver.MockWebServer
 import org.junit.Before
 import org.junit.Rule

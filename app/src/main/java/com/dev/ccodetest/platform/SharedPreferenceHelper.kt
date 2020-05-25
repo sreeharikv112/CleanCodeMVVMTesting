@@ -2,14 +2,14 @@ package com.dev.ccodetest.platform
 
 import android.content.Context
 import android.content.SharedPreferences
-import com.dev.ccodetest.constants.DS_SHARED_PREF_CCA
+import com.dev.ccodetest.constants.SHARED_PREF_CCA
 
 /**
  * Shared Preference helper with common access methods for different data types.
  */
 class SharedPreferenceHelper(var context: Context) {
 
-    private val mSharedPrefKey = DS_SHARED_PREF_CCA
+    private val mSharedPrefKey = SHARED_PREF_CCA
     private val mSharedPref : SharedPreferences = context.getSharedPreferences(mSharedPrefKey, Context.MODE_PRIVATE)
 
     private val mSharedPrefEditor : SharedPreferences.Editor = mSharedPref.edit()

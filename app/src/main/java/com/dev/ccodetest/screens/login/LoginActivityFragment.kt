@@ -8,13 +8,15 @@ import android.view.View
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.dev.ccodetest.R
 import com.dev.ccodetest.models.login.AllPeople
 import com.dev.ccodetest.models.login.AllPeopleResult
 import com.dev.ccodetest.platform.BaseFragment
 import com.dev.ccodetest.platform.BaseViewModelFactory
 import com.dev.ccodetest.platform.LiveDataWrapper
+import com.dev.ccodetest.screens.login.helper.LoginRecyclerViewAdapter
+import com.dev.ccodetest.screens.login.uc.LoginUseCase
+import com.dev.ccodetest.screens.login.vm.LoginActivityViewModel
 import kotlinx.android.synthetic.main.fragment_main_activity.*
 import kotlinx.coroutines.Dispatchers
 import org.koin.android.ext.android.inject
@@ -52,7 +54,11 @@ class LoginActivityFragment : BaseFragment() {
         this.mViewModel.mAllPeopleResponse.observe(this, this.mDataObserver)
         this.mViewModel.mLoadingLiveData.observe(this, this.loadingObserver)
 
-        mRecyclerViewAdapter = LoginRecyclerViewAdapter(activity!!, arrayListOf())
+        mRecyclerViewAdapter =
+            LoginRecyclerViewAdapter(
+                activity!!,
+                arrayListOf()
+            )
         landingListRecyclerView.adapter = mRecyclerViewAdapter
         landingListRecyclerView.layoutManager = LinearLayoutManager(activity!!)
 
@@ -62,7 +68,7 @@ class LoginActivityFragment : BaseFragment() {
 
     //---------------Observers---------------//
     private val mDataObserver = Observer<LiveDataWrapper<AllPeople>> { result ->
-        when (result?.responseRESPONSESTATUS) {
+        when (result?.responseStatus) {
             LiveDataWrapper.RESPONSESTATUS.LOADING -> {
                 // Loading data
             }
